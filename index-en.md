@@ -10,31 +10,15 @@ permalink: /index.html
 header:
   image: /assets/img/home-header.jpg
 tagline: > # this means to ignore newlines until "repository:"
-  Write an awesome description for your new site here. You can edit this
-  line in index.md. It will appear in your document head meta (for
-  SEO optimization) and in your feed.xml site description.
-excerpt: >
-  Write an awesome description for your new site here. You can edit this
-  line in index.md. It will appear in your document head meta (for
-  SEO optimization) and in your feed.xml site description.
+  Author of The Extraordinary Lives of Ordinary People.
 repository:
-  is_project_page: true
-  show_downloads: true
-  repository_url: https://gitlab.com/lorepirri/jekyll-theme-simple-blog
-  zip_url: https://gitlab.com/lorepirri/jekyll-theme-simple-blog/repository/master/archive.zip
-  tar_url: https://gitlab.com/lorepirri/jekyll-theme-simple-blog/repository/master/archive.tar.gz
-ref: home
+  is_project_page: false
+  show_downloads: false
+  ref: home
 lang: en
 ---
 
-Simple Blog Theme is a clean, responsive blogging theme for Jekyll. It is inspired by the Cayman Blog Theme.
-
-This theme has all you need to start today blogging with Jekyll, and no effort: pages, posts, few social buttons. Try loading this on mobile too.
-
-Have a look at the Github page for more information.
-
-You find this descriptive text in the `index.md` file, so you can change it, or remove it completely, according to your needs.
-
+Gauri Jhangiani is a young author with a zest for both writing and life. When she's not writing, she enjoys reading, binge-watching TV shows and spending many hours on Tumblr. The Extraordinary Lives of Ordinary People is her first book. 
 <h1>Latest Articles</h1>
 <div>&nbsp;</div>
 {% include list-category-posts.html lang=page.lang category="articles" max_posts=3 max_post_tags=3 %}

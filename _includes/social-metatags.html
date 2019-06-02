@@ -78,10 +78,7 @@
 
 {% if page-lang == "en" %}
   {% assign page-lang-country = "en_US" %}
-{% elsif page-lang == "it" %}
-  {% assign page-lang-country = "it_IT" %}
 {% endif %}
-<meta property="og:locale" content="{{ page-lang-country }}" />
 
 {%if page.date %}
   <meta property="article:published_time" content="{{ page.date | date_to_xmlschema }}" />
