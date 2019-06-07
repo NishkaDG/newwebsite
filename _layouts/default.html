@@ -5,8 +5,6 @@
   <head>
     {% if page-lang == "en" %}
       {% assign page-lang-country = "en_US" %}
-    {% elsif page-lang == "it" %}
-      {% assign page-lang-country = "it_IT" %}
     {% endif %}
 
     {% include language-meta-link.html %}
@@ -33,9 +31,6 @@
       {% include social-metatags.html %}
     {% endif %}
 
-    {% assign canonical_url = page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url %}
-
-    <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
 
     <link rel="alternate" type="application/rss+xml" title="{{ site.title | escape }}" href="{{ '/feed-' | prepend: site.baseurl | prepend: site.url | append: page.lang | append: '.xml' }}">
 
@@ -74,13 +69,6 @@
       <h1 class="project-name">{{ header_title }}</h1>
       <h2 class="project-tagline">{{ page-tagline }}</h2>
 
-      {% if page.repository.is_project_page %}
-          <a href="{{ page.repository.repository_url }}" class="btn" target="_blank">Source Code</a>
-        {% if page.repository.show_downloads %}
-          <a href="{{ page.repository.zip_url }}" class="btn" target="_blank">Download .zip</a>
-          <a href="{{ page.repository.tar_url }}" class="btn" target="_blank">Download .tar.gz</a>
-        {% endif %}
-      {% endif %}
       <!-- Post tagline -->
       {% if page.layout == 'post' %}
         <!-- <h2 class="project-date">

@@ -21,10 +21,6 @@ lang: en
 Gauri Jhangiani is a young author with a zest for both writing and life. When she's not writing, she enjoys reading, binge-watching TV shows and spending many hours on Tumblr. The Extraordinary Lives of Ordinary People is her first book. 
 <h1>Latest Articles</h1>
 <div>&nbsp;</div>
-{% include list-category-posts.html lang=page.lang category="articles" max_posts=3 max_post_tags=3 %}
+{% include list-category-posts.html lang=page.lang category="articles" max_posts=100 max_post_tags=3 %}
 
 ---
-
-<h1>Latest Projects</h1>
-<div>&nbsp;</div>
-{% include list-category-posts.html lang=page.lang category="projects" max_posts=3 max_post_tags=3 %}
