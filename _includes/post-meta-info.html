@@ -15,7 +15,7 @@
       {% when '11' %}{{ site.t[include.post_lang].months.november }}
       {% when '12' %}{{ site.t[include.post_lang].months.december }}
     {% endcase %}
-    {{ include.post_date | date: " %-d, %Y" }}
+    {{ include.post_date | date: " %-d %b, %Y" }}
   </time>
   <span style="padding-left: 5px; padding-right: 5px;"> • </span>
   <span itemprop="readtime">

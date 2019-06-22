@@ -28,7 +28,7 @@ permalink: /:title.html
 # jekyll-theme-simple-blog date format
 # refer to http://shopify.github.io/liquid/filters/date/ if you want to customize this
 jekyll-theme-simple-blog:
-  date_format: "%b %-d, %Y"
+  date_format:
 
 theme: # leave it empty
 

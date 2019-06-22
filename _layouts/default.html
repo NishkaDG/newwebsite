@@ -71,6 +71,7 @@
 
       <!-- Post tagline -->
       {% if page.layout == 'post' %}
+		{{ page.date | date: "%-d %B %Y" }}
         <!-- <h2 class="project-date">
         </h2> -->
       {% endif %}
